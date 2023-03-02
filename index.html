@@ -38,26 +38,29 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-      .wrapper {
-        min-height: 100vh;
-        background-color: hsl(212, 45%, 89%);
-      }
-      .flex {
-        display: flex;
-      }
-      .column {
-        flex-direction: column;
-      }
-      .items-center {
-        align-items: center;
-      }
-      .card {
-        padding: 16px;
-        background-color: white;
-        border-radius: 16px;
-      }
-      .justify-center {
-        justify-content: center;
+
+      @media screen and (max-width: 375px) {
+        .wrapper {
+          min-height: 100vh;
+          background-color: hsl(212, 45%, 89%);
+        }
+        .flex {
+          display: flex;
+        }
+        .column {
+          flex-direction: column;
+        }
+        .items-center {
+          align-items: center;
+        }
+        .card {
+          padding: 16px;
+          background-color: white;
+          border-radius: 16px;
+        }
+        .justify-center {
+          justify-content: center;
+        }
       }
     </style>
   </head>
