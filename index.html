@@ -53,13 +53,37 @@
         .items-center {
           align-items: center;
         }
-        .card {
-          padding: 16px;
-          background-color: white;
-          border-radius: 16px;
+        .text-center {
+          text-align: center;
         }
         .justify-center {
           justify-content: center;
+        }
+        .gap-1 {
+          gap: 16px;
+        }
+        .gap-2 {
+          gap: 24px;
+        }
+        .card {
+          padding: 16px;
+          background-color: hsl(0, 0%, 100%);
+          border-radius: 16px;
+          margin: 0 32px 0 32px;
+          box-shadow: 16px 16px hsl(212, 45%, 89%);
+        }
+        .qr-code-container img {
+          width: 100%;
+          border-radius: 16px;
+        }
+        .qr-code-container p {
+          color: hsl(220, 15%, 55%);
+          margin-bottom: 24px;
+        }
+        .title {
+          font-size: x-large;
+          font-weight: 700;
+          color: hsl(218, 44%, 22%);
         }
       }
     </style>
@@ -67,12 +91,15 @@
   <body>
     <div class="wrapper flex items-center justify-center">
       <div class="card flex column">
-        <div class="qr-code-container">
-          <div>Improve your front-end skills by building projects</div>
-          <div>
+        <div class="qr-code-container flex column gap-2">
+          <img src="/images/image-qr-code.png" alt="" />
+          <div class="title">
+            Improve your front-end skills by building projects
+          </div>
+          <p class="text-center">
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
-          </div>
+          </p>
         </div>
       </div>
     </div>
@@ -80,7 +107,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Anil Ozsoy</a>.
     </div>
   </body>
 </html>
